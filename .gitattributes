@@ -1,0 +1,3 @@
+*.ai binary
+*.xib bi
+\!*.pbxproj binary
