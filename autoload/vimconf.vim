@@ -134,7 +134,7 @@ set hidden
 
 " 書き込み可能なディレクトリなら、
 " スワップファイルを下記ディレクトリに作成する
-let s:backup_dir = expand('~/dotfiles/vim/backup')
+let s:backup_dir = expand('~/vimfiles/backup')
 if 2 == filewritable(s:backup_dir)
   let &g:directory = s:backup_dir " スワップファイルの場所
   let &g:backupdir = s:backup_dir " バックアップファイルの場所
