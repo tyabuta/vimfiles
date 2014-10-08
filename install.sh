@@ -8,7 +8,9 @@ case $answer in
 esac
 
 cat <<EOT > ~/.vimrc
-set runtimepath+=~/vimfiles
+if has('unix')
+    set runtimepath+=~/vimfiles
+endif
 source ~/vimfiles/runtime/vimrc.vim
 EOT
 
