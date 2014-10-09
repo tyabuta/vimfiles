@@ -290,6 +290,15 @@ command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | d
 command! -nargs=? -complete=file Diff if '<args>'=='' | browse vertical diffsplit|else| vertical diffsplit <args>|endif
 
 
+set grepprg=grep\ -nH
+
+command! -nargs=1 Grep call <sid>my_grep(<q-args>)
+function! s:my_grep(str)
+    execute printf("grep -r %s ./ | cw", a:str)
+endfunction
+
+
+
 " }}}
 
 " -----------------------------------------------
