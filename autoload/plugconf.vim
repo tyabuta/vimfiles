@@ -113,7 +113,7 @@ nnoremap <silent> [prefix]b :Unite buffer<CR>
 nnoremap <silent> [prefix]ee :Unite -direction=topleft -vertical -winwidth=35 bookmark<CR>
 " nnoremap <silent> [prefix]u :UniteBookmarkAdd<CR>
 " nnoremap <silent> [prefix]f :Unite -start-insert buffer bookmark:* file_mru directory_mru file<CR>
-nnoremap <silent> [prefix]f :Unite -start-insert file_mru directory_mru<CR>
+" nnoremap <silent> [prefix]f :Unite -start-insert file_mru directory_mru<CR>
 nnoremap <silent> [prefix]<S-f> :Unite -start-insert file<CR>
 nnoremap <silent> [prefix]m :Unite -start-insert menu:shortcat<CR>
 nnoremap <silent> [prefix]j :Unite -auto-preview jump<CR>
@@ -306,13 +306,13 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:50'
 
 
 " カレントディレクトリを基準に検索
-nnoremap <silent> [prefix]cf :CtrlPCurWD<CR>
+nnoremap <silent> ff :CtrlPCurWD<CR>
 
 " カレントバッファのルートディレクトリを基準に検索(root:自動認識)
 nnoremap <silent> [prefix]cF :CtrlPRoot<CR>
 
 " 最近使ったファイルから検索
-nnoremap <silent> [prefix]cr :CtrlPMRUFiles<CR>
+nnoremap <silent> fr :CtrlPMRUFiles<CR>
 
 "}}}
 
