@@ -120,6 +120,10 @@ nnoremap <silent> [prefix]j :Unite -auto-preview jump<CR>
 nnoremap <silent> [prefix]l :Unite -direction=botright location_list<CR>
 nnoremap <silent> [prefix]d :Unite -direction=botright -vertical -winwidth=70 outline<CR>
 
+nnoremap <silent> [prefix]g :Unite  -keep-focus -no-quit -direction=botright grep<CR>
+vnoremap <silent> [prefix]g y:Unite -keep-focus -no-quit -direction=botright grep:::<C-R>=escape(@", '\\.*$^[]')<CR><CR>
+
+
 "}}}
 
 " -------------------------------------------------------------------
