@@ -27,7 +27,8 @@ NeoBundle 'tyabuta/switch-toggler.vim'
 NeoBundle 'LeafCage/foldCC'         " foldスタイルの変更
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'embear/vim-localvimrc'   " ローカル設定
+" NeoBundle 'embear/vim-localvimrc'   " ローカル設定
+NeoBundle 'thinca/vim-localrc'      " ローカル設定
 NeoBundle 'junegunn/vim-easy-align' " 文書整形
 NeoBundle 'kana/vim-smartinput'     " 括弧入力の補完
 NeoBundle 'scrooloose/syntastic'    " 保存時の自動シンタックスチェック
