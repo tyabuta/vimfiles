@@ -75,7 +75,7 @@ autocmd InsertEnter,InsertLeave * set cursorline!
 " macvim用の設定
 if has('gui_macvim')
     " 透過率の設定
-    set transparency=30
+    set transparency=20
 endif
 
 set shortmess+=I
