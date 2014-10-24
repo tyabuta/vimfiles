@@ -1,0 +1,32 @@
+echo "import .vimshrc"
+
+# -----------------------------------------------
+# alias設定
+# -----------------------------------------------
+alias cls="clear"
+alias rmf="rm -Rf"
+
+# -----------------------------------------------
+# Git関係
+# -----------------------------------------------
+
+#export GIT_SSL_NO_VERIFY=true
+
+alias git-status="git status"
+
+# ステージングしたワークツリーとのdiffを表示する。
+alias git-diff-cached="git diff --cached"
+
+# git submodule init/update を兼ねたクローン
+alias git-clone="git clone --recursive"
+
+# 全てのブランチを表示
+alias git-branches="git branch -a"
+
+# -----------------------------------------------
+# ls設定
+# -----------------------------------------------
+alias ls="ls --color=auto"
+alias la="ls -lha"
+
+

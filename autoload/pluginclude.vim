@@ -30,6 +30,8 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/vimfiler.vim'
 
+NeoBundle 'Shougo/vimshell.vim'
+
 NeoBundle 'tyabuta/sline-style.vim'
 NeoBundle 'tyabuta/inline-syntax.vim'
 NeoBundle 'tyabuta/sweep-trail.vim'
