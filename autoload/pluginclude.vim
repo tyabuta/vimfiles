@@ -12,14 +12,16 @@ endfunction
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundle 'Shougo/vimproc.vim', {
-    \ 'build' : {
-    \     'cygwin'  : 'make -f make_cygwin.mak',
-    \     'mac'     : 'make -f make_mac.mak',
-    \     'linux'   : 'make',
-    \     'unix'    : 'gmake',
-    \    },
-    \ }
+if has('unix')
+    NeoBundle 'Shougo/vimproc.vim', {
+        \ 'build' : {
+        \     'cygwin'  : 'make -f make_cygwin.mak',
+        \     'mac'     : 'make -f make_mac.mak',
+        \     'linux'   : 'make',
+        \     'unix'    : 'gmake',
+        \    },
+        \ }
+endif
 
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache.vim'
