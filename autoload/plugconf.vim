@@ -320,12 +320,18 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:50'
 
 " カレントディレクトリを基準に検索
 nnoremap <silent> ff :CtrlPCurWD<CR>
-
 " カレントバッファのルートディレクトリを基準に検索(root:自動認識)
-nnoremap <silent> [prefix]cF :CtrlPRoot<CR>
+nnoremap <silent> fF :CtrlPRoot<CR>
 
 " 最近使ったファイルから検索
 nnoremap <silent> fr :CtrlPMRUFiles<CR>
+
+" ディレクトリ移動
+nnoremap <silent> fd :CtrlPDir .<CR>
+nnoremap <silent> f~ :CtrlPDir ~<CR>
+
+" tag検索
+nnoremap <silent> ft :CtrlPTag<CR>
 
 "}}}
 
