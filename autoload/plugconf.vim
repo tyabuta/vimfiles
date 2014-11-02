@@ -108,21 +108,23 @@ let g:unite_source_file_mru_limit = 1000
 " unite-history/yank
 let g:unite_source_history_yank_enable = 1
 
-" unite キーバインド
+" -- unite キーバインド --
+
+" ディレクトリBookmark一覧(BookmarkName: dir)
+nnoremap <silent> [prefix]ee :Unite -direction=topleft -vertical -winwidth=35 -default-action=cd bookmark:dir<CR>
+
 nnoremap <silent> [prefix]b :Unite buffer<CR>
-nnoremap <silent> [prefix]ee :Unite -direction=topleft -vertical -winwidth=35 bookmark<CR>
+nnoremap <silent> [prefix]m :Unite menu:shortcat<CR>
+nnoremap <silent> [prefix]d :Unite -direction=botright -vertical -winwidth=70 outline<CR>
+
+" nnoremap <silent> [prefix]<S-f> :Unite -start-insert file<CR>
+" nnoremap <silent> [prefix]j :Unite -auto-preview jump<CR>
+" nnoremap <silent> [prefix]g :Unite  -keep-focus -no-quit -direction=botright grep<CR>
 " nnoremap <silent> [prefix]u :UniteBookmarkAdd<CR>
 " nnoremap <silent> [prefix]f :Unite -start-insert buffer bookmark:* file_mru directory_mru file<CR>
 " nnoremap <silent> [prefix]f :Unite -start-insert file_mru directory_mru<CR>
-nnoremap <silent> [prefix]<S-f> :Unite -start-insert file<CR>
-nnoremap <silent> [prefix]m :Unite menu:shortcat<CR>
-nnoremap <silent> [prefix]j :Unite -auto-preview jump<CR>
 " nnoremap <silent> [prefix]l :Unite -direction=botright location_list<CR>
-nnoremap <silent> [prefix]d :Unite -direction=botright -vertical -winwidth=70 outline<CR>
-
-nnoremap <silent> [prefix]g :Unite  -keep-focus -no-quit -direction=botright grep<CR>
-vnoremap <silent> [prefix]g y:Unite -keep-focus -no-quit -direction=botright grep:::<C-R>=escape(@", '\\.*$^[]')<CR><CR>
-
+" vnoremap <silent> [prefix]g y:Unite -keep-focus -no-quit -direction=botright grep:::<C-R>=escape(@", '\\.*$^[]')<CR><CR>
 
 "}}}
 
