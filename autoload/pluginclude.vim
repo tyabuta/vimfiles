@@ -49,6 +49,7 @@ NeoBundle 'thinca/vim-visualstar'   " *検索の拡張
 NeoBundle 'tmhedberg/matchit'       " %の拡張
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tyru/caw.vim'            " コメントアウト機能
+NeoBundle 'MattesGroeger/vim-bookmarks'
 
 " NeoBundle 'plasticboy/vim-markdown'
 

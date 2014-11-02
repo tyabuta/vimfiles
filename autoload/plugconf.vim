@@ -115,9 +115,9 @@ nnoremap <silent> [prefix]ee :Unite -direction=topleft -vertical -winwidth=35 bo
 " nnoremap <silent> [prefix]f :Unite -start-insert buffer bookmark:* file_mru directory_mru file<CR>
 " nnoremap <silent> [prefix]f :Unite -start-insert file_mru directory_mru<CR>
 nnoremap <silent> [prefix]<S-f> :Unite -start-insert file<CR>
-nnoremap <silent> [prefix]m :Unite -start-insert menu:shortcat<CR>
+nnoremap <silent> [prefix]m :Unite menu:shortcat<CR>
 nnoremap <silent> [prefix]j :Unite -auto-preview jump<CR>
-nnoremap <silent> [prefix]l :Unite -direction=botright location_list<CR>
+" nnoremap <silent> [prefix]l :Unite -direction=botright location_list<CR>
 nnoremap <silent> [prefix]d :Unite -direction=botright -vertical -winwidth=70 outline<CR>
 
 nnoremap <silent> [prefix]g :Unite  -keep-focus -no-quit -direction=botright grep<CR>
@@ -357,5 +357,22 @@ function! s:hooks.on_source(bundle)
 endfunction
 " }}}
 
+" -------------------------------------------------------------------
+" vim-bookmarks
+" -------------------------------------------------------------------
+" {{{
+
+nmap [prefix]mm <Plug>BookmarkToggle
+nmap [prefix]mi <Plug>BookmarkAnnotate
+nmap [prefix]ma <Plug>BookmarkShowAll
+
+" 使わないMappingをOverwrite
+nmap <Nop>BookmarkNext     <Plug>BookmarkNext
+nmap <Nop>BookmarkPrev     <Plug>BookmarkPrev
+nmap <Nop>BookmarkClear    <Plug>BookmarkClear
+nmap <Nop>BookmarkClearAll <Plug>BookmarkClearAll
+
+
+" }}}
 
 
