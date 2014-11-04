@@ -364,6 +364,9 @@ endfunction
 " -------------------------------------------------------------------
 " {{{
 
+" ブックマークの表記アイコン
+let g:bookmark_sign = '*'
+
 nmap [prefix]mm <Plug>BookmarkToggle
 nmap [prefix]mi <Plug>BookmarkAnnotate
 nmap [prefix]ma <Plug>BookmarkShowAll
