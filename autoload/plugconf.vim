@@ -380,4 +380,13 @@ nmap <Nop>BookmarkClearAll <Plug>BookmarkClearAll
 
 " }}}
 
+" -------------------------------------------------------------------
+" vim-operator-replace
+" -------------------------------------------------------------------
+" {{{
+
+map r <Plug>(operator-replace)
+
+" }}}
+
 

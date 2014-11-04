@@ -54,6 +54,13 @@ NeoBundle 'MattesGroeger/vim-bookmarks'
 " NeoBundle 'plasticboy/vim-markdown'
 
 
+" vim-operator-replace
+" http://kazuph.hateblo.jp/entry/2013/01/04/005030
+NeoBundleLazy 'kana/vim-operator-replace', {
+            \ 'depends'  : ['kana/vim-operator-user'],
+            \ 'autoload' : {'mappings':['<Plug>(operator-replace)']}
+            \ }
+
 " unite-source
 NeoBundleLazy 'Shougo/unite-outline',      { 'depends': ['Shougo/unite.vim'] }
 NeoBundleLazy 'zhaocai/unite-scriptnames', { 'depends': ['Shougo/unite.vim'] }
