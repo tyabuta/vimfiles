@@ -57,13 +57,43 @@ NeoBundle 'MattesGroeger/vim-bookmarks'
 
 " NeoBundle 'plasticboy/vim-markdown'
 
+" vim-textobj-user {{{
 
-" vim-operator-replace
+" if{c} af{c}
+NeoBundleLazy 'thinca/vim-textobj-between', {
+            \ 'depends'  : ['kana/vim-textobj-user'],
+            \ 'autoload' : {'mappings':['<Plug>(textobj-between-']}
+            \ }
+
+" i, a,
+NeoBundleLazy 'sgur/vim-textobj-parameter', {
+            \ 'depends'  : ['kana/vim-textobj-user'],
+            \ 'autoload' : {'mappings':['<Plug>(textobj-parameter-']}
+            \ }
+
+" iS aS
+NeoBundleLazy 'saihoooooooo/vim-textobj-space', {
+            \ 'depends'  : ['kana/vim-textobj-user'],
+            \ 'autoload' : {'mappings':['<Plug>(textobj-space-']}
+            \ }
+
+" ic ac
+NeoBundleLazy 'thinca/vim-textobj-comment', {
+            \ 'depends'  : ['kana/vim-textobj-user'],
+            \ 'autoload' : {'mappings':['<Plug>(textobj-comment-']}
+            \ }
+
+" }}}
+
+" vim-operator-user {{{
+
 " http://kazuph.hateblo.jp/entry/2013/01/04/005030
 NeoBundleLazy 'kana/vim-operator-replace', {
             \ 'depends'  : ['kana/vim-operator-user'],
             \ 'autoload' : {'mappings':['<Plug>(operator-replace)']}
             \ }
+
+" }}}
 
 " unite-source
 NeoBundleLazy 'Shougo/unite-outline',      { 'depends': ['Shougo/unite.vim'] }

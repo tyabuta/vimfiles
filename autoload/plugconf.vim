@@ -381,12 +381,37 @@ nmap <Nop>BookmarkClearAll <Plug>BookmarkClearAll
 " }}}
 
 " -------------------------------------------------------------------
-" vim-operator-replace
+" vim-textobj-user
+" -------------------------------------------------------------------
+"  {{{
+
+" 遅延読み込み(NeoBundleLazy)する為、ここでmapping
+omap  ac <Plug>(textobj-comment-a)
+xmap  ac <Plug>(textobj-comment-a)
+omap  aS <Plug>(textobj-space-a)
+xmap  aS <Plug>(textobj-space-a)
+omap  a, <Plug>(textobj-parameter-a)
+xmap  a, <Plug>(textobj-parameter-a)
+omap  af <Plug>(textobj-between-a)
+xmap  af <Plug>(textobj-between-a)
+
+omap  ic <Plug>(textobj-comment-i)
+xmap  ic <Plug>(textobj-comment-i)
+omap  iS <Plug>(textobj-space-i)
+xmap  iS <Plug>(textobj-space-i)
+omap  i, <Plug>(textobj-parameter-i)
+xmap  i, <Plug>(textobj-parameter-i)
+omap  if <Plug>(textobj-between-i)
+xmap  if <Plug>(textobj-between-i)
+
+"  }}}
+
+" -------------------------------------------------------------------
+" vim-operator-user
 " -------------------------------------------------------------------
 " {{{
 
+" 遅延読み込み(NeoBundleLazy)する為、ここでmapping
 map r <Plug>(operator-replace)
 
 " }}}
-
-
