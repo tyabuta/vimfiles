@@ -46,7 +46,6 @@ NeoBundle 'LeafCage/foldCC'         " foldスタイルの変更
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 
-NeoBundle 'junegunn/vim-easy-align' " 文書整形
 NeoBundle 'kana/vim-smartinput'     " 括弧入力の補完
 NeoBundle 'scrooloose/syntastic'    " 保存時の自動シンタックスチェック
 NeoBundle 'thinca/vim-visualstar'   " *検索の拡張
@@ -55,7 +54,6 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tyru/caw.vim'            " コメントアウト機能
 NeoBundle 'MattesGroeger/vim-bookmarks'
 
-" NeoBundle 'plasticboy/vim-markdown'
 
 " vim-textobj-user {{{
 
@@ -95,14 +93,27 @@ NeoBundleLazy 'kana/vim-operator-replace', {
 
 " }}}
 
-" unite-source
+" unite-source {{{
+
 NeoBundleLazy 'Shougo/unite-outline',      { 'depends': ['Shougo/unite.vim'] }
 NeoBundleLazy 'zhaocai/unite-scriptnames', { 'depends': ['Shougo/unite.vim'] }
 NeoBundleLazy 'osyo-manga/unite-quickfix', { 'depends': ['Shougo/unite.vim'] }
 
+" }}}
+
+" 文書整形
+NeoBundleLazy 'junegunn/vim-easy-align', {
+            \ 'autoload': {'mappings':['<Plug>(EasyAlign)']}
+            \ }
+
 " quickrun
 NeoBundleLazy 'thinca/vim-quickrun', {
             \ 'autoload': {'commands':['QuickRun']}
+            \ }
+
+" capture
+NeoBundleLazy 'tyru/capture.vim', {
+            \ 'autoload': {'commands':['Capture']}
             \ }
 
 " memolist
