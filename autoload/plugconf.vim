@@ -414,4 +414,7 @@ xmap  if <Plug>(textobj-between-i)
 " 遅延読み込み(NeoBundleLazy)する為、ここでmapping
 map r <Plug>(operator-replace)
 
+map <S-c> <Plug>(operator-comment)
+map <S-u> <Plug>(operator-uncomment)
+
 " }}}

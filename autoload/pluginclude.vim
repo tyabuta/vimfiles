@@ -91,6 +91,11 @@ NeoBundleLazy 'kana/vim-operator-replace', {
             \ 'autoload' : {'mappings':['<Plug>(operator-replace)']}
             \ }
 
+NeoBundleLazy 'emonkak/vim-operator-comment', {
+            \ 'depends'  : ['kana/vim-operator-user'],
+            \ 'autoload' : {'mappings':['<Plug>(operator-comment)','<Plug>(operator-uncomment)']}
+            \ }
+
 " }}}
 
 " unite-source {{{
