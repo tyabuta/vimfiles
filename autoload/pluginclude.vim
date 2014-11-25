@@ -81,6 +81,12 @@ NeoBundleLazy 'thinca/vim-textobj-comment', {
             \ 'autoload' : {'mappings':['<Plug>(textobj-comment-']}
             \ }
 
+" il al
+NeoBundleLazy 'kana/vim-textobj-line', {
+            \ 'depends'  : ['kana/vim-textobj-user'],
+            \ 'autoload' : {'mappings':['<Plug>(textobj-line-']}
+            \ }
+
 " }}}
 
 " vim-operator-user {{{

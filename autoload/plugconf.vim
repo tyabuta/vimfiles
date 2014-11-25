@@ -394,6 +394,8 @@ omap  a, <Plug>(textobj-parameter-a)
 xmap  a, <Plug>(textobj-parameter-a)
 omap  af <Plug>(textobj-between-a)
 xmap  af <Plug>(textobj-between-a)
+omap  al <Plug>(textobj-line-a)
+xmap  al <Plug>(textobj-line-a)
 
 omap  ic <Plug>(textobj-comment-i)
 xmap  ic <Plug>(textobj-comment-i)
@@ -403,6 +405,10 @@ omap  i, <Plug>(textobj-parameter-i)
 xmap  i, <Plug>(textobj-parameter-i)
 omap  if <Plug>(textobj-between-i)
 xmap  if <Plug>(textobj-between-i)
+omap  il <Plug>(textobj-line-i)
+xmap  il <Plug>(textobj-line-i)
+
+
 
 "  }}}
 
