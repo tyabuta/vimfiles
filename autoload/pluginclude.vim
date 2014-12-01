@@ -50,7 +50,7 @@ NeoBundle 'kana/vim-smartinput'     " 括弧入力の補完
 NeoBundle 'scrooloose/syntastic'    " 保存時の自動シンタックスチェック
 NeoBundle 'thinca/vim-visualstar'   " *検索の拡張
 NeoBundle 'tmhedberg/matchit'       " %の拡張
-NeoBundle 'tpope/vim-surround'
+" NeoBundle 'tpope/vim-surround'
 NeoBundle 'tyru/caw.vim'            " コメントアウト機能
 NeoBundle 'MattesGroeger/vim-bookmarks'
 
@@ -100,6 +100,11 @@ NeoBundleLazy 'kana/vim-operator-replace', {
 NeoBundleLazy 'emonkak/vim-operator-comment', {
             \ 'depends'  : ['kana/vim-operator-user'],
             \ 'autoload' : {'mappings':['<Plug>(operator-comment)','<Plug>(operator-uncomment)']}
+            \ }
+
+NeoBundleLazy 'rhysd/vim-operator-surround', {
+            \ 'depends'  : ['kana/vim-operator-user'],
+            \ 'autoload' : {'mappings':['<Plug>(operator-surround-']}
             \ }
 
 " }}}

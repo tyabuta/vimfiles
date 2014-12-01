@@ -423,4 +423,9 @@ map r <Plug>(operator-replace)
 map <S-c> <Plug>(operator-comment)
 map <S-u> <Plug>(operator-uncomment)
 
+map ys <Plug>(operator-surround-append)
+map ds <Plug>(operator-surround-delete)
+map cs <Plug>(operator-surround-replace)
+
+
 " }}}
