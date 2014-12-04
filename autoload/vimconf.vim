@@ -41,6 +41,9 @@ set number
 " ルーラーを表示する。
 set ruler
 
+" 折り返して表示しない
+set nowrap
+
 " シンタックスハイライトを有効にする。
 syntax on
 
