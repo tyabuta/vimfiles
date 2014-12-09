@@ -127,6 +127,53 @@ function! macro#PromptSelectMenuList(msg, items)
 endfunction
 
 
+
+function! macro#PromptSelectKeyMap(msg, items)
+    " more-promptの既存設定値
+    let original_more = macro#MorePrompt()
+    " echo出力があふれた時にMore表示が出ないようにする。
+    call macro#MorePromptSetEnabled(0)
+
+    let items_lentgh = len(a:items)
+    let inputKey = ''
+    while 1
+        let cnt = 0
+        let selectItem = ''
+
+        " --- 描画バッファ ---
+        let buf = a:msg . "\n"
+        for item in a:items
+            if item =~ printf("^%s", inputKey)
+                let buf .= item . '  '
+                let selectItem = item
+                let cnt += 1
+            endif
+        endfor
+        let buf .= "\n"
+        let buf .= printf("key: %s", inputKey)
+        " --- 描画 ---
+        redraw
+        echo buf
+
+        if 1 >= cnt
+            break
+        endif
+
+        " --- 入力 ---
+        let a = getchar()
+        let c = nr2char(a)
+        let inputKey .= c
+    endwhile
+
+    " オリジナルの設定に戻す。
+    call macro#MorePromptSetEnabled(original_more)
+    " 再描画
+    redraw
+
+    return selectItem
+endfunction
+
+
 "
 " カレントバッファのファイルタイプを取得する。
 "
