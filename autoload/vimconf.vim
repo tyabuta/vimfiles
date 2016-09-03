@@ -50,6 +50,9 @@ syntax on
 " カラースキームを設定する。
 colorscheme torte
 
+" Popupメニューの表示カラー
+highlight Pmenu ctermbg=238 gui=bold
+
 " 検索結果のハイライト(設定しない場合はデフォルトでNo)
 set hlsearch
 "set nohlsearch
