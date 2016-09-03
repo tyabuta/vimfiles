@@ -48,7 +48,7 @@ set nowrap
 syntax on
 
 " カラースキームを設定する。
-colorscheme ron
+colorscheme torte
 
 " 検索結果のハイライト(設定しない場合はデフォルトでNo)
 set hlsearch
@@ -170,9 +170,9 @@ endif
 " exモード抑制
 nnoremap Q <Nop>
 
-" Shiftを押しながら移動キーで、画面スクロール。
-nnoremap <S-j> <C-f>
-nnoremap <S-k> <C-b>
+" Shiftを押しながら移動キーで、3行分カーソル移動。
+nnoremap <S-j> 3j
+nnoremap <S-k> 3k
 
 " Shiftを押しながら移動キーで、行頭、行末移動。
 nnoremap <S-h> ^
