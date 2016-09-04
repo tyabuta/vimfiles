@@ -15,14 +15,21 @@ endif
 
 " bundleディレクトリの登録
 call neobundle#begin(expand('~/vimfiles/bundle/'))
+
+" 追加プラグイン
+" autoload/pluginclude.vim
 call pluginclude#rc()
+
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
 
+
 " プラグインの設定
+" autoload/plugconf.vim
 call plugconf#rc()
 
 " vimの設定
+" autoload/vimconf.vim
 call vimconf#rc()
 
