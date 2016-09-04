@@ -174,8 +174,8 @@ endif
 nnoremap Q <Nop>
 
 " Shiftを押しながら移動キーで、3行分カーソル移動。
-nnoremap <S-j> 3j
-nnoremap <S-k> 3k
+noremap <S-j> 3j
+noremap <S-k> 3k
 
 " Shiftを押しながら移動キーで、行頭、行末移動。
 nnoremap <S-h> ^
