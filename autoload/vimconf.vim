@@ -217,7 +217,7 @@ nnoremap <C-z> <C-a>
 nnoremap <silent> <C-c>d :call macro#DateInsert()<CR>
 
 " 検索結果のハイライトを解除
-nnoremap <silent> <C-c>h :nohlsearch<CR>
+nnoremap [prefix]h :nohlsearch<CR>
 
 " コメントライン書き込み(Shif-l強調版)
 nnoremap <silent> <C-c>l
