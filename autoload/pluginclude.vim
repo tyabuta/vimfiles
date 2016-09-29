@@ -37,6 +37,9 @@ NeoBundle 'Shougo/vimfiler.vim'
 
 NeoBundle 'Shougo/vimshell.vim'
 
+" GOPATHを設定して、:GoInstallBinaries を叩く必要がある。
+NeoBundle 'fatih/vim-go'
+
 NeoBundle 'tyabuta/sline-style.vim'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
