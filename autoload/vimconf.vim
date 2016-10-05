@@ -235,6 +235,10 @@ nnoremap <silent> <S-b> :call macro#BufferControl()<CR>
 " 全体選択
 nnoremap [prefix]a ggVG
 
+" window分割
+nnoremap [prefix]\| :vs<CR>
+nnoremap [prefix]-  :sp<CR>
+
 
 " 置換コマンドの補完
 nnoremap [prefix]r :%s///gc<Left><Left><Left>
