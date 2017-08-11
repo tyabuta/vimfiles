@@ -28,6 +28,9 @@ if !has('win32unix')
     NeoBundle 'thinca/vim-localrc'      " ローカル設定
 endif
 
+
+NeoBundle 'vim-jp/vimdoc-ja'
+
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'Shougo/neomru.vim'
@@ -45,7 +48,7 @@ NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 
 NeoBundle 'tyabuta/inline-syntax.vim'
-NeoBundle 'tyabuta/sweep-trail.vim'
+"NeoBundle 'tyabuta/sweep-trail.vim'
 NeoBundle 'tyabuta/switch-toggler.vim'
 
 NeoBundle 'LeafCage/foldCC'         " foldスタイルの変更
@@ -60,6 +63,9 @@ NeoBundle 'tmhedberg/matchit'       " %の拡張
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tyru/caw.vim'            " コメントアウト機能
 NeoBundle 'MattesGroeger/vim-bookmarks'
+
+
+NeoBundle 'cespare/vim-toml'
 
 
 " vim-textobj-user {{{
