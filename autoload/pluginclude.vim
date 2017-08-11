@@ -56,7 +56,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'simeji/winresizer'
 
-NeoBundle 'kana/vim-smartinput'     " 括弧入力の補完
+"NeoBundle 'kana/vim-smartinput'     " 括弧入力の補完
 NeoBundle 'scrooloose/syntastic'    " 保存時の自動シンタックスチェック
 NeoBundle 'thinca/vim-visualstar'   " *検索の拡張
 NeoBundle 'tmhedberg/matchit'       " %の拡張
