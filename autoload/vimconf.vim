@@ -48,7 +48,8 @@ set nowrap
 syntax on
 
 " カラースキームを設定する。
-colorscheme torte
+"colorscheme torte
+colorscheme default
 
 " Popupメニューの表示カラー
 highlight Pmenu ctermbg=238 gui=bold
